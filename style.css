@@ -1,0 +1,187 @@
+/* 1 */
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+
+  .custom-button:active {
+    transform: scale(0.95);
+  }
+
+
+
+
+        /* 2 */
+        .dog 
+     {
+        width: 300px;
+        height: 150px;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: border-radius 1s;
+        filter: drop-shadow (20px 30px 20px green);
+     }
+
+     .card {
+        
+        border-radius: 20px;
+        position: relative;
+      width: 300px;
+      margin: 20px;
+      overflow: hidden;
+      transition: box-shadow 1s, border-radius 1s;
+     }
+   
+
+
+
+     .card:hover {
+
+        box-shadow: 10px 10px 10px 5px green;
+
+     }
+
+
+
+     /* 3 */
+     
+     .TEXT {
+        font-size: 140px;
+        color: red;
+        letter-spacing: 20px;
+        animation: flash 0.5s infinite;
+      }
+  
+      @keyframes flash {
+        0%, 49% {
+          opacity: 1;
+        }
+        50%, 100% {
+          opacity: 0;
+        }
+      }
+
+    
+
+/* 4 */
+   
+.spinner-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .spinner {
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+    border-top-color: red;
+    border-right-color: yellow;
+    border-bottom-color: green;
+    border-left-color: blue;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    transition: box-shadow 0.3s;
+  }
+
+  .spinner-container:hover .spinner {
+    animation: none; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .spinner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    pointer-events: none; 
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* 5 */
+ul {
+    display: inline-flex;
+}
+
+header {
+    background-color: #333333;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 20px;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+    transition: color 1s, text-shadow 1s;
+  }
+
+  nav a:hover {
+    color: pink;
+    text-shadow: 2px 2px 5px pink;
+  }
+
+
+/* 6 */
+
+.loading-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+
+  .progress {
+    height: 100%;
+    background: linear-gradient(to right, #af4c4c 0%, #af4c4c 50%, #db3434 50%, #db3434 100%);
+    position: absolute;
+    animation: fillProgress 2s forwards; 
+  }
+
+  @keyframes fillProgress {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+  }
